@@ -17,4 +17,4 @@ docker pull tezos/tezos
 wget -O mainnet.sh https://gitlab.com/tezos/tezos/raw/latest-release/scripts/tezos-docker-manager.sh
 chmod +x mainnet.sh
 ./mainnet.sh start
-docker run tezos/tezos:v10.1 tezos-node
+docker run tezos/tezos:v10.1 tezos-node --history-mode rolling
